@@ -148,10 +148,8 @@ section {
 .hero-avatar {
     width: 210px;
     height: 210px;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
-    border: 6px solid #d6e6ff;
-    background: linear-gradient(145deg, #dbeafe, #bfdbfe);
-    box-shadow: 0 12px 28px rgba(29, 78, 216, 0.2);
     overflow: hidden;
 }
 
@@ -159,8 +157,10 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 50%;
     display: block;
 }
+
 
 .section-title {
     font-size: clamp(1.5rem, 4vw, 2rem);
