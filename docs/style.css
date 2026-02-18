@@ -146,19 +146,29 @@ section {
 }
 
 .hero-avatar {
-    width: 210px;
-    height: 210px;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    overflow: hidden;
+    width: 210px !important;
+    min-width: 210px !important;
+    max-width: 210px !important;
+    height: 210px !important;
+    min-height: 210px !important;
+    max-height: 210px !important;
+    border-radius: 999px !important;
+    overflow: hidden !important;
+    flex-shrink: 0;
+    border: 5px solid #d6e6ff;
+    box-shadow: 0 10px 28px rgba(29, 78, 216, 0.22);
+    background: #dbeafe;
 }
 
-.hero-avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
+.hero-avatar > img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: 999px !important;
 }
 
 
@@ -446,8 +456,12 @@ footer {
     }
 
     .hero-avatar {
-        width: 170px;
-        height: 170px;
+        width: 170px !important;
+        min-width: 170px !important;
+        max-width: 170px !important;
+        height: 170px !important;
+        min-height: 170px !important;
+        max-height: 170px !important;
         margin: 0 auto;
     }
 
