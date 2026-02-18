@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap');
 
 :root {
-    --bg-main: #f4f7fb;
+    --bg-main: #eef4ff;
     --bg-soft: #ffffff;
-    --bg-card: #eef3fb;
-    --text-main: #112036;
-    --text-soft: #46586f;
-    --line: #d3deec;
-    --brand: #0f766e;
-    --brand-strong: #0b5d58;
-    --accent: #d97706;
-    --shadow: 0 14px 38px rgba(17, 32, 54, 0.09);
+    --bg-card: #e9f1ff;
+    --text-main: #10233f;
+    --text-soft: #456086;
+    --line: #c8d9f5;
+    --brand: #2563eb;
+    --brand-strong: #1d4ed8;
+    --accent: #0ea5e9;
+    --shadow: 0 14px 38px rgba(16, 35, 63, 0.1);
 }
 
 * {
@@ -26,9 +26,9 @@ html {
 body {
     font-family: 'Space Grotesk', sans-serif;
     background:
-        radial-gradient(circle at 15% 8%, rgba(15, 118, 110, 0.12) 0, transparent 42%),
-        radial-gradient(circle at 88% 14%, rgba(217, 119, 6, 0.11) 0, transparent 40%),
-        linear-gradient(170deg, #f8fbff 0%, #edf3fa 100%);
+        radial-gradient(circle at 16% 9%, rgba(37, 99, 235, 0.16) 0, transparent 42%),
+        radial-gradient(circle at 85% 12%, rgba(14, 165, 233, 0.13) 0, transparent 40%),
+        linear-gradient(170deg, #f8fbff 0%, #e8f0ff 100%);
     color: var(--text-main);
     line-height: 1.7;
 }
@@ -81,7 +81,7 @@ nav {
 
 .nav-links a:hover {
     color: var(--brand-strong);
-    background: rgba(15, 118, 110, 0.1);
+    background: rgba(37, 99, 235, 0.12);
 }
 
 section {
@@ -178,10 +178,20 @@ section {
     align-items: center;
     gap: 0.55rem;
     color: var(--text-soft);
+    padding: 0.45rem 0.6rem;
+    border-radius: 10px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .skill-item i {
-    color: var(--accent);
+    color: var(--brand-strong);
+    width: 18px;
+    text-align: center;
+}
+
+.skill-item:hover {
+    background: #eef4ff;
+    transform: translateX(3px);
 }
 
 .projects-grid {
@@ -201,7 +211,7 @@ section {
 
 .project-card:hover {
     transform: translateY(-6px);
-    border-color: #93c5fd;
+    border-color: #7aa9ff;
     box-shadow: 0 20px 38px rgba(17, 32, 54, 0.14);
 }
 
@@ -237,9 +247,9 @@ section {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.78rem;
     background: var(--bg-card);
-    color: #0d2d4f;
+    color: #1a3f78;
     padding: 0.28rem 0.62rem;
-    border: 1px solid #c6daef;
+    border: 1px solid #bfd4f6;
     border-radius: 999px;
 }
 
@@ -293,8 +303,8 @@ section {
 }
 
 .future-item {
-    background: #f5f9ff;
-    border: 1px solid #d6e4f6;
+    background: #f0f6ff;
+    border: 1px solid #cddff7;
     border-radius: 12px;
     padding: 0.95rem;
     color: #304b68;
@@ -313,8 +323,8 @@ section {
 }
 
 .github-stat {
-    background: #f4f8ff;
-    border: 1px solid #d6e4f6;
+    background: #edf4ff;
+    border: 1px solid #cddff7;
     border-radius: 12px;
     padding: 0.8rem 0.9rem;
     color: #264767;
@@ -331,10 +341,13 @@ section {
 }
 
 .contact-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
     text-decoration: none;
-    color: #244362;
-    background: #eef5ff;
-    border: 1px solid #cfe0f6;
+    color: #1f3f70;
+    background: #eaf2ff;
+    border: 1px solid #c6d9f7;
     border-radius: 999px;
     padding: 0.6rem 1rem;
     font-weight: 500;
@@ -343,7 +356,7 @@ section {
 
 .contact-item:hover {
     transform: translateY(-2px);
-    background: #e3f0ff;
+    background: #dceaff;
 }
 
 footer {
@@ -392,5 +405,19 @@ footer {
 
     .hero-content {
         padding: 1.5rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .contact-links {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
     }
 }
